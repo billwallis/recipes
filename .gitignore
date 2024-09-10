@@ -1,0 +1,11 @@
+# IDE and system files
+.idea/
+.run/
+.vscode/
+.DS_Store
+
+# TeX Files
+*.otf
+*.ttf
+compiled/*
+!/compiled/*.pdf
