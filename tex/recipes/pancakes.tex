@@ -1,69 +1,22 @@
-\documentclass[12pt]{article}%[a4paper,10pt]
+\documentclass[12pt]{article}
+\usepackage{recipes}
 
-%----------Useful Packages----------%
-\usepackage{marvosym,fontspec,titlesec,charter}
-\RequirePackage{xcolor,graphicx}
-\usepackage[margin=0.8in]{geometry}
+\renewcommand{\recipename}{Pancakes}
+\renewcommand{\recipeservings}{6 pancakes}
+\renewcommand{\preptime}{30 mins}  % confirm
+\renewcommand{\cooktime}{30 mins}  % confirm
 
-%----------Page Setup----------%
-
-\usepackage{fancyhdr}\pagestyle{fancy}
-\renewcommand{\headrulewidth}{0pt}% Default header rule
-\renewcommand{\footrulewidth}{0pt}% No footer rule
-\fancyhf{}% Clear header/footer
-\fancypagestyle{plain}{
-  \renewcommand{\headrulewidth}{0pt}% No header rule
-  \renewcommand{\footrulewidth}{0pt}% Default footer rule
-  \fancyhf{}% Clear header/footer
-}
-\AtBeginDocument{\thispagestyle{plain}}
-
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{.5\baselineskip plus 1pt minus 1pt}
-
-\setlength{\headheight}{0pt}
-
-%----------Fonts----------%
-
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont[
-    Path = ../fonts/,
-    SmallCapsFont = Fontin-SmallCaps.otf,
-    BoldFont = Fontin-Bold.otf,
-    ItalicFont = Fontin-Italic.otf
-]
-% A font by Jos Buivenga (exljbris) -> www.exljbris.com
-{Fontin.otf}
-
-%----------Extras----------%
-
-\RequirePackage{enumitem,wasysym} %  https://tex.stackexchange.com/questions/85335/how-to-change-dot-spacing-in-dotfill
-\newcommand{\tick}{\dotfill\(\ocircle\)}
-\newcommand{\blue}[1]{\textcolor{blue!70!white}{#1}}
-\newcommand{\red}[1]{\textcolor{red}{#1}}
-\newcommand{\quant}[1]{\red{#1}\tick}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%--------------------BEGIN DOCUMENT----------------------
 \begin{document}
-
-% \hrulefill
-\vspace*{\baselineskip}
-
-{\LARGE \blue{Pancakes} \hfill\normalsize 6 Pancakes}
-
-\vspace{-\baselineskip}\hrulefill
+\recipetitle
 
 \subsection*{Ingredients}
 
 \begin{itemize}[nolistsep]
-    \item Self-raising Flour --- \quant{135g (4\(^{3}\!/\!_{4}\) ounces)}
-    \item Caster Sugar --- \quant{2 Tablespoons}
-    \item Milk --- \quant{130ml (4\(^{1}\!/\!_{2}\) fluid ounces)}
-    \item Large Egg --- \quant{1, lightly beaten}
-    \item Butter --- \quant{2 Tablespoons, melted}
+    \item \ingredient{Self-raising Flour}{135g (4\pfrac{3}{4} ounces)}
+    \item \ingredient{Caster Sugar}{2 Tablespoons}
+    \item \ingredient{Milk}{130ml (4\pfrac{1}{2} fluid ounces)}
+    \item \ingredient{Large Egg}{1, lightly beaten}
+    \item \ingredient{Butter}{2 Tablespoons, melted}
 \end{itemize}
 
 One may add \blue{raspberries} or \blue{chocolate chips} for extra sweetness. Serve dish with maple syrup.

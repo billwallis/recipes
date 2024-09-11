@@ -1,115 +1,49 @@
-\documentclass[12pt]{article}%[a4paper,10pt]
+\documentclass[12pt]{article}
+\usepackage{recipes}
 
-% A Few Useful Packages
-\usepackage{marvosym,fontspec,titlesec,charter}
-\usepackage{xunicode,xltxtra,url,parskip}
-\RequirePackage{color,graphicx}
-\usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[margin=0.8in]{geometry}
+\renewcommand{\recipename}{Mango \& Chicken Casserole}
+\renewcommand{\recipecreator}{Tana Ramsay}
+\renewcommand{\recipeservings}{3-4 people}
+\renewcommand{\preptime}{25 mins}
+\renewcommand{\cooktime}{2 hours}
 
-% Setup hyperref package, and colours for links
-\usepackage{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-
-\usepackage{fancyhdr}\pagestyle{fancy}
-\renewcommand{\headrulewidth}{0pt}% Default header rule
-\renewcommand{\footrulewidth}{0pt}% No footer rule
-\fancyhf{}% Clear header/footer
-\fancypagestyle{plain}{
-  \renewcommand{\headrulewidth}{0pt}% No header rule
-  \renewcommand{\footrulewidth}{0pt}% Default footer rule
-  \fancyhf{}% Clear header/footer
-}
-\AtBeginDocument{\thispagestyle{plain}}
-
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{.5\baselineskip plus 1pt minus 1pt}
-
-\setlength{\headheight}{0pt}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% FONTS
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont[
-    Path = ../fonts/,
-    SmallCapsFont = Fontin-SmallCaps.otf,
-    BoldFont = Fontin-Bold.otf,
-    ItalicFont = Fontin-Italic.otf
-]
-% A font by Jos Buivenga (exljbris) -> www.exljbris.com
-{Fontin.otf}
-%%%
-
-%%%%%%%%%%
-% Colors %
-%%%%%%%%%%
-
-\RequirePackage{xcolor}
-
-\definecolor{white}{RGB}{255,255,255}
-\definecolor{gray}{HTML}{4D4D4D}
-\definecolor{lightgray}{HTML}{D3D3D3}
-\definecolor{darkgrey}{HTML}{404040}
-
-
-\RequirePackage{enumitem,wasysym} %  https://tex.stackexchange.com/questions/85335/how-to-change-dot-spacing-in-dotfill
-\newcommand{\tick}{\dotfill\(\ocircle\)}
-\newcommand{\blue}[1]{\textcolor{blue!70!white}{#1}}
-\newcommand{\red}[1]{\textcolor{red}{#1}}
-\newcommand{\green}[1]{\textcolor{green!70!black}{#1}}
-\newcommand{\quant}[1]{\red{#1}\tick}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%--------------------BEGIN DOCUMENT----------------------
 \begin{document}
-
-% \vspace*{\baselineskip}
-
-{\LARGE \blue{Mango \& Chicken Casserole} \hfill\normalsize Tana Ramsay, 3-4 people}
-
-\vspace{-\baselineskip}\hrulefill
-
-\vspace{-0.5\baselineskip}\hfill {\footnotesize Prep \green{25 minutes}, Cook \green{2 hours}}
+\recipetitle
 
 \subsection*{Ingredients}
 
 \begin{itemize}[nolistsep]
-    \item Olive Oil --- \red{2 tablespoons} \tick
-    \item Butter --- \red{2 tablespoons} \tick
-    \item Chicken Breast --- \red{1kg, skinless and boneless} \tick
-    \item Large Onion --- \red{2} \tick
-    \item Large Mango --- \red{2, peeled and diced} \tick
-    \item Chicken Stock --- \red{400ml} \tick
-    \item Lemon Zest --- \red{1 whole lemon} \tick
-    \item Ground Cinnamon --- \red{1 teaspoon} \tick
-    \item Ground Coriander --- \red{1 teaspoon} \tick
-    \item Single Cream --- \red{250ml} \tick
-    \item Water --- \red{1 tablespoon} \tick
-    \item Lemon Juice --- \red{1 whole lemon} \tick
-    \item Flour --- \red{2 teaspoons} \tick
+    \item \ingredient{Olive Oil}{2 tablespoons}
+    \item \ingredient{Butter}{2 tablespoons}
+    \item \ingredient{Chicken Breast}{1kg, skinless and boneless}
+    \item \ingredient{Large Onion}{2}
+    \item \ingredient{Large Mango}{2, peeled and diced}
+    \item \ingredient{Chicken Stock}{400ml}
+    \item \ingredient{Lemon Zest}{1 whole lemon}
+    \item \ingredient{Ground Cinnamon}{1 teaspoon}
+    \item \ingredient{Ground Coriander}{1 teaspoon}
+    \item \ingredient{Single Cream}{250ml}
+    \item \ingredient{Water}{1 tablespoon}
+    \item \ingredient{Lemon Juice}{1 whole lemon}
+    \item \ingredient{Flour}{2 teaspoons}
 \end{itemize}
 
 Serve dish with plain rice.
 
 \subsection*{Instructions}
 
-Preheat the oven to 190\(^{\circ}\)C.
-
 \begin{enumerate}
-    \item Brown the \blue{chicken} pieces, \blue{oil}, and \blue{butter} in a frying pan, and then transfer to a casserole dish.%\tick
-    \item Fry the \blue{onion} until soft and add to the chicken.%\tick
-    \item Gently fry \blue{mango} pieces over a low heat for about 4 minutes, turning frequently.%\tick
-    \item Stir in the \blue{lemon zest} (not juice), \blue{coriander}, \blue{cinnamon}, and \blue{chicken stock}, bring to a boil, and then pour over the chicken. Cover the dish and bake in the over for 1 hour.%\tick
+    \item Preheat the oven to 190{\degrees}C.
+    \item Brown the \blue{chicken} pieces, \blue{oil}, and \blue{butter} in a frying pan, and then transfer to a casserole dish.
+    \item Fry the \blue{onion} until soft and add to the chicken.
+    \item Gently fry \blue{mango} pieces over a low heat for about 4 minutes, turning frequently.
+    \item Stir in the \blue{lemon zest} (not juice), \blue{coriander}, \blue{cinnamon}, and \blue{chicken stock}, bring to a boil, and then pour over the chicken. Cover the dish and bake in the over for 1 hour.
     \item Pour everything from the casserole dish into the frying pan. Take the chicken pieces out and put back into the casserole dish and cover.
-    \item Put the \blue{rice} on and cook as directed.%\tick
-    \item Turn up the heat and bring to the boil, letting it reduce down and thicken.%\tick
-    \item Turn down the heat and stir in the \blue{cream}.%\tick
-    \item Mix the \blue{flour}, \blue{lemon juice}, and \blue{water} and beat into the mixture.%\tick
-    \item Simmer together for a few minutes, and then pour over the chicken and serve on a bed of rice.%\tick
+    \item Put the \blue{rice} on and cook as directed.
+    \item Turn up the heat and bring to the boil, letting it reduce down and thicken.
+    \item Turn down the heat and stir in the \blue{cream}.
+    \item Mix the \blue{flour}, \blue{lemon juice}, and \blue{water} and beat into the mixture.
+    \item Simmer together for a few minutes, and then pour over the chicken and serve on a bed of rice.
 \end{enumerate}
 
 \end{document}
