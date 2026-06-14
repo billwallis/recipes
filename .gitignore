@@ -1,11 +1,23 @@
-# IDE and system files
-.idea/
-.run/
-.vscode/
-.DS_Store
-
 # TeX Files
 *.otf
 *.ttf
 compiled/*
 !/compiled/*.pdf
+
+# System files
+.DS_Store
+
+# Database files
+*.sqlite
+*.*db
+*.*db.wal
+
+# IntelliJ project files
+.idea/
+.run/
+*.iml
+out
+gen
+
+# Visual Studio Code
+.vscode/
