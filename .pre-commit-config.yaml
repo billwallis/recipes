@@ -32,7 +32,7 @@ repos:
       - id: check-pre-commit-ci-config
 
   - repo: https://github.com/billwallis/bills-hooks
-    rev: v0.0.15
+    rev: v0.0.16
     hooks:
       - id: check-no-commit-comment
       - id: tidy-gitkeep
